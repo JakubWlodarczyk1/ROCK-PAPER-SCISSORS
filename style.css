@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#25272E ;
+}
+.tittle{
+  font-family: 'Oswald', sans-serif;
+  text-align: center ;
+  background-color: #FFFFFF;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  color: #25272E;
+  font-weight: bold;
+}
+
+.score-board{
+  text-align: center;
+  color:white;
+  border: 3px solid white;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 5%;
+  padding: 5px 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 46px;
+  position: relative;
+}
+
+#user{
+  background-color: #E2584C;
+  width: 25%;
+  position: absolute;
+  font-size: 14px;
+  top: 40%;
+  left: -13%;
+}
+
+#comp{ 
+  background-color: #E2584C;
+  position: absolute;
+  font-size: 14px;
+  top: 40%;
+  right: -13%;
+  width: 25%;
+  text-align: center;
+}
+
+.result>p{
+  color:white;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  text-align: center;
+}
+
+.choices{
+    margin-top: 40px;
+  text-align: center;
+}
+
+.choice {
+    display:inline-flex;
+    padding: 0 10px;
+    margin: auto; 
+}
+#r>img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#p>img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;    
+}
+
+#s>img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    padding: 30px 0;
+}
+
+#s>img:hover{
+    cursor: pointer; 
+}
+
+#p>img:hover{
+  cursor: pointer; 
+}
+
+#r>img:hover{
+  cursor: pointer;
+}
+
+.green-glow>img{
+border: 5px solid green;
+box-shadow: 0 0 30px rgb(77, 150, 3);
+}
+
+.red-glow>img{
+border: 5px solid rgb(250, 53, 53);
+box-shadow: 0 0 30px rgb(250, 63, 63); 
+}
+
+.gray-glow>img{
+border: 5px solid gray;
+box-shadow: 0 0 15px rgb(163, 157, 157);  
+}
