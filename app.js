@@ -5,8 +5,9 @@ let userScore_span=document.getElementById('user-score');
 let compScore_span=document.getElementById('comp-score');
 let result_div=document.querySelector('.result>p');
 let rock_div=document.getElementById('r');
-let paper_div=document.getElementById('p')
+let paper_div=document.getElementById('p');
 let scissor_div=document.getElementById('s');
+let info_footer=document.getElementById('info');
 
 function compPick() {
   let choose=['r','p','s'];
@@ -73,6 +74,15 @@ function play(input){
           document.getElementById(input).classList.remove('red-glow');
         }, 300);
     }}
+   if (sdd==userScore || sdd==compScore) {
+      if(sdd==userScore) {
+        info_footer.textContent = 'You won!!';
+        info_footer.style.color = 'green';
+      } else {
+        info_footer.textContent = 'You lost!!';
+        info_footer.style.color = 'red';
+      }
+    }
 }
 
 rock_div.addEventListener('click',()=>{
